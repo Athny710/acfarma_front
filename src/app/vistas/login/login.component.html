@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="cont-login">
+        <div class="cont-login-left">
+            <img src="../../assets/images/salmon-black-logo.png">
+            <div class="login-row">
+                <h2>SALMÓN</h2>
+                <p>Contratos Electrónicos</p>
+            </div>
+            <p>PLATAFORMA DE GESTIÓN DE CONTRATOS DEL GRUPO AC FARMA</p>
+        </div>
+        <div class="cont-login-right">
+            <img src="../../assets/images/acfarma-logo.png" alt="">
+            <form class="form-login"  [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm.value)">
+                <div class="form-group">
+                    <p>Usuario:</p>
+                    <input type="text" id="pass" placeholder="Ingrese su usuario" formControlName="user">
+                </div>
+                <div class="form-group">
+                    <p>Contraseña:</p>
+                    <input type="password" id="pass" placeholder="Ingrese su contraseña" formControlName="pass">
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Ingresar">
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</div>
+

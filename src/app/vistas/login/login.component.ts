@@ -4,6 +4,7 @@ import { AuthService } from '../../servicios/auth.service';
 import { LoginI } from "../../modelos/login.interface"
 import { ResponseI } from "../../modelos/response.interface"
 import { Router } from '@angular/router';
+import * as bcrypt from 'bcryptjs';
 
 @Component({
   selector: 'app-login',
@@ -22,9 +23,15 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onLogin(form: LoginI){
+  async onLogin(form: LoginI){
 
-    /* console.log(form); */
+    /*
+    console.log(form.pass);
+    const salt = bcrypt.genSalt(12);
+    let pass = bcrypt.hashSync(form.pass, 10);
+    console.log(pass);
+    form.pass = pass;
+    */console.log(form)
     this.auth.loginByEmail(form).subscribe(data => {
       let dataResponse:ResponseI = data;
       console.log(dataResponse.token);

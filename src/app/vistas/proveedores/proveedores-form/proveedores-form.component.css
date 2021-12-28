@@ -1,0 +1,118 @@
+.form-container{
+    position: relative;
+    top: 60px;
+    height: calc(100vh - 60px);
+    width: 100%;
+    top: 0px;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.header h1{
+    line-height: 50px;
+    font-weight: 500;
+}
+.userform{
+    margin: 10px auto auto 0;
+    background-color: #fff;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 25px 35px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: row;
+}
+.form-group>p{
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 14px;
+    display: inline;
+    line-height: 40px;
+    width: 100px;
+}
+.form-group>input{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.userform input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #9A1A1E;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    width: 200px;
+}
+
+.userform input[type="submit"]{
+    border: none;
+    outline: none;
+    background-color: #9A1A1E;
+    height: 35px;
+    color: #ffffff;
+    border-radius:5px ;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100px;
+    margin: auto 0 auto 10px;
+    transition: all 0.3s;
+}
+.userform input[type="submit"]:hover{
+    cursor: pointer;
+    color: #9A1A1E;
+    background-color: #E3E4E7;
+}
+textarea{
+    resize: none;
+    outline: none;
+    border: 1px solid #9A1A1E;
+    border-radius: 5px;
+}
+.form-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: align-self;
+}
+#usuario{
+    border: none;
+    outline: none;
+    background-color: #E3E4E7;
+    height: 35px;
+    color: hsl(0, 0%, 10%);
+    border-radius:5px ;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100px;
+    margin: auto 0 auto auto;
+    transition: all 0.3s;
+}
+#usuario:hover{
+    cursor:pointer;
+    color: #9A1A1E;
+}
+select{
+    border: none;
+    border-bottom: 1px solid #9A1A1E;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    width: 200px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}

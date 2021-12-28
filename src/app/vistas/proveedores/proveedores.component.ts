@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import * as $ from "jquery";
 import 'datatables.net';
 import 'datatables.net-bs4';
+import { Proveedor } from 'src/app/modelos/proveedor.interface';
+import { AuthService } from '../../servicios/auth.service';
+import { Router } from '@angular/router';
 
 function table(){
   ($('#mytable2') as any).DataTable({
@@ -35,10 +38,19 @@ function table(){
 })
 export class ProveedoresComponent implements OnInit {
 
-  constructor() { }
+  proveedores: Proveedor[] = [];
+  constructor(private service:AuthService, private router:Router) { }
 
   ngOnInit() {
-    table()
+    this.service.getproveedores().subscribe((data:any)=>{
+      this.proveedores=data.proveedores;
+      setTimeout(() => {
+        table();
+      }, 10);
+    })
+  }
+  public proveedoresForm(){
+    this.router.navigate(['inicio/proveedoresForm']);
   }
 
 }

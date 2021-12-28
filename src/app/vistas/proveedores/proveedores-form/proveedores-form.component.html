@@ -1,1 +1,79 @@
-<p>proveedores-form works!</p>
+<div class="form-container">
+    <div class="header">
+        <h1>Nuevo Proveedor</h1>
+    </div>
+    <form action="" class="userform">
+        <div class="form-col">
+            <div class="form-group">
+                <p>Nombre:</p>
+                <input type="text" id="nombreprov" formControlName="nombreprov">
+            </div>
+            <div class="form-group">
+                <p>Tipo Doc.:</p>
+                <select name="" id="">
+                    <option value="administrador">RUC</option>
+                    <option value="usuario">DNI</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Num. Doc.</p>
+                <input type="text" id="pass" formControlName="user">
+            </div>
+            <div class="form-group">
+                <p>Correo:</p>
+                <input type="text" id="correoprov" formControlName="correoprov">
+            </div>
+            <div class="form-group">
+                <p>Telefono:</p>
+                <input type="text" id="correoprov" formControlName="correoprov">
+            </div>
+            <div class="form-group">
+                <p>Direcc. Fiscal:</p>
+                <input type="text" id="correoprov" formControlName="correoprov">
+            </div>
+            
+        </div>
+        <div class="form-col">
+            <div class="form-group">
+                <p>Direcc. Real:</p>
+                <input type="text" id="correoprov" formControlName="correoprov">
+            </div>
+            <div class="form-group">
+                <p>Partida Elec.:</p>
+                <input type="text" id="pass" formControlName="user">
+            </div>
+            <div class="form-group" style="flex-direction: column;">
+                <p>Observaciones:</p>
+                <textarea rows="5" cols="20"></textarea>
+            </div>
+            
+        </div>
+        <div class="form-col">
+            <div class="form-group">
+                <p>Nombre Rep:</p>
+                <input type="text" id="pass" formControlName="user">
+            </div>
+            <div class="form-group">
+                <p>Tipo Doc.:</p>
+                <select name="" id="">
+                    <option value="administrador">DNI</option>
+                    <option value="usuario">RUC</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Num. Doc.:</p>
+                <input type="text" id="pass" formControlName="user">
+            </div>
+            <div class="form-group">
+                <p>Cargo Rep:</p>
+                <input type="text" id="pass" formControlName="user">
+            </div>
+            <div class="form-group" style="margin-top: auto;">
+                <button id="usuario" (click)="proveedores()">Regresar</button>
+                <input type="submit" value="Guardar">
+            </div>
+        </div>
+        
+        
+    </form>
+</div>
